@@ -45,7 +45,7 @@ export function Contact() {
       } else {
         throw new Error('Failed to send message')
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Error",
         description: "Something went wrong. Please try again later.",
