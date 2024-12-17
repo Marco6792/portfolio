@@ -38,7 +38,7 @@ export function Navbar() {
       }`}>
         {/* Backdrop */}
         <div className={`absolute inset-0 rounded-full transition-colors border ${
-          scrolled ? 'bg-white/70 dark:bg-slate-950/70 backdrop-blur-lg shadow-lg' : 'bg-white/50 dark:bg-slate-950/50 backdrop-blur-xl'
+          scrolled ? 'bg-white/60 dark:bg-slate-950/60 backdrop-blur-2xl shadow-lg' : 'bg-white/40 dark:bg-slate-950/40 backdrop-blur-3xl'
         }`} />
 
         {/* Content */}

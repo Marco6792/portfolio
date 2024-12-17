@@ -49,7 +49,7 @@ export function About() {
                 </Button>
                 <Button variant="outline" asChild>
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/Marco6792"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
@@ -60,7 +60,7 @@ export function About() {
                 </Button>
                 <Button variant="outline" asChild>
                   <a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://linkedin.com/in/marco223"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"

@@ -7,11 +7,53 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Send } from "lucide-react"
+import { useToast } from "@/hooks/use-toast"
+import { useState } from "react"
 
 export function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast()
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Add your form submission logic here
+    setIsLoading(true)
+
+    const form = e.target as HTMLFormElement
+    const formData = new FormData(form)
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    }
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon!",
+          variant: "default",
+        })
+        form.reset()
+      } else {
+        throw new Error('Failed to send message')
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -36,6 +78,7 @@ export function Contact() {
                   <Label htmlFor="name">Name</Label>
                   <Input
                     id="name"
+                    name="name"
                     placeholder="John Doe"
                     required
                   />
@@ -46,6 +89,7 @@ export function Contact() {
                   <Input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="john@example.com"
                     required
                   />
@@ -55,15 +99,28 @@ export function Contact() {
                   <Label htmlFor="message">Message</Label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder="Your message here..."
                     rows={4}
                     required
                   />
                 </div>
                 
-                <Button type="submit" className="w-full">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
+                <Button type="submit" className="w-full" disabled={isLoading}>
+                  {isLoading ? (
+                    <span className="flex items-center">
+                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
+                    </span>
+                  ) : (
+                    <>
+                      <Send className="mr-2 h-4 w-4" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>
