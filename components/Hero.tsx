@@ -25,7 +25,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="text-center lg:text-left space-y-6"
           >
-            <h1 className="text-4xl sm:text-3xl  lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300">
+            <h1 className="text-4xl sm:text-xl  lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300">
               Hi, I&apos;m Marco
               <span className="block text-blue-600 dark:text-blue-400 w-full">
                 <TypeAnimation
