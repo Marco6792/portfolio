@@ -1,0 +1,117 @@
+%PDF-1.7
+1 0 obj
+<</Type /Catalog
+/Pages 2 0 R>>
+endobj
+
+2 0 obj
+<</Type /Pages
+/Kids [3 0 R]
+/Count 1>>
+endobj
+
+3 0 obj
+<</Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Resources
+<</Font
+<</F1
+<</Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica>>>>>>
+/Contents 4 0 R>>
+endobj
+
+4 0 obj
+<</Length 2000>>
+stream
+BT
+/F1 24 Tf
+50 700 Td
+(Marco) Tj
+/F1 12 Tf
+0 -30 Td
+(Full Stack Developer) Tj
+0 -20 Td
+(Portfolio: [portfolio-marc.vercel.app]) Tj
+
+/F1 14 Tf
+-20 -40 Td
+(Professional Summary) Tj
+/F1 12 Tf
+0 -20 Td
+(Passionate Full Stack Developer with expertise in modern web technologies and mobile development.) Tj
+(Skilled in creating responsive, user-friendly applications with a focus on clean code and optimal performance.) Tj
+
+/F1 14 Tf
+0 -40 Td
+(Technical Skills) Tj
+/F1 12 Tf
+0 -20 Td
+(• Frontend: React, React Native, Next.js, TypeScript, HTML5, CSS3, Tailwind CSS) Tj
+0 -15 Td
+(• Backend: Node.js, Express.js, RESTful APIs) Tj
+0 -15 Td
+(• Database: MongoDB, SQL) Tj
+0 -15 Td
+(• Tools: Git, Docker, Figma) Tj
+0 -15 Td
+(• UI/UX Design: Figma, Responsive Design, User Experience) Tj
+
+/F1 14 Tf
+0 -40 Td
+(Projects) Tj
+/F1 12 Tf
+0 -20 Td
+(Personal Portfolio Website) Tj
+0 -15 Td
+(• Developed a modern portfolio website using Next.js 15, React, and Tailwind CSS) Tj
+0 -15 Td
+(• Implemented responsive design, dark mode, and smooth animations) Tj
+0 -15 Td
+(• Utilized TypeScript for type safety and better code maintainability) Tj
+
+/F1 14 Tf
+0 -40 Td
+(Education) Tj
+/F1 12 Tf
+0 -20 Td
+([Currently studying computer engineering]) Tj
+
+/F1 14 Tf
+0 -40 Td
+(Languages) Tj
+/F1 12 Tf
+0 -20 Td
+([English French]) Tj
+
+/F1 14 Tf
+0 -40 Td
+(Contact) Tj
+/F1 12 Tf
+0 -20 Td
+(Email: [nebam0667@gmail.com]) Tj
+0 -15 Td
+(LinkedIn: [Your LinkedIn]) Tj
+0 -15 Td
+(GitHub: [https://github.com/Marco6792]) Tj
+
+ET
+endstream
+endobj
+
+xref
+0 5
+0000000000 65535 f
+0000000010 00000 n
+0000000056 00000 n
+0000000111 00000 n
+0000000254 00000 n
+
+trailer
+<</Size 5
+/Root 1 0 R>>
+startxref
+2304
+%%EOF

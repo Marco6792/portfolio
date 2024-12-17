@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-slate-50/50 dark:bg-slate-950/50" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
@@ -74,6 +74,13 @@ export function Hero() {
                 className="px-6 py-3 border rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 font-medium transition-colors duration-200"
               >
                 View Projects
+              </a>
+              <a
+                href="/resume.pdf"
+                download
+                className="px-6 py-3 border rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 font-medium transition-colors duration-200"
+              >
+                Download Resume
               </a>
             </motion.div>
           </motion.div>

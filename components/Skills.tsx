@@ -44,7 +44,7 @@ const upcomingProjects = [
 
 export function Skills() {
   return (
-    <section className="py-20 bg-slate-50 dark:bg-slate-900/50">
+    <section id="skills" className="py-20 bg-slate-50 dark:bg-slate-900/50">
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
