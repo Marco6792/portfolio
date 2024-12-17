@@ -25,7 +25,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="text-center lg:text-left space-y-6"
           >
-            <h1 className="text-4xl md:text-xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300">
+            <h1 className="text-4xl sm:text-2xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300">
               Hi, I&apos;m Marco
               <div className="h-[40px] md:h-[24px] lg:h-[48px]">
                 <span className="block text-blue-600 dark:text-blue-400">
@@ -51,7 +51,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0"
+              className="pt-[2rem] text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0"
             >
               A passionate full-stack developer crafting beautiful and functional web experiences. 
               Let&apos;s build something amazing together.
