@@ -25,13 +25,13 @@ export function About() {
           <Card>
             <CardContent className="pt-6 space-y-6">
               <p className="text-lg leading-relaxed">
-                I'm a passionate Full Stack Developer with expertise in the MERN stack.
+                I&apos;m a passionate Full Stack Developer with expertise in the MERN stack.
                 With a strong foundation in JavaScript and TypeScript, I create modern
                 web applications that are both beautiful and functional.
               </p>
               <p className="text-lg leading-relaxed">
                 My experience spans across web and mobile development, with a focus on
-                React, React Native, Node.js, and MongoDB. I'm dedicated to writing
+                React, React Native, Node.js, and MongoDB. I&apos;m dedicated to writing
                 clean, maintainable code and creating exceptional user experiences.
               </p>
 
