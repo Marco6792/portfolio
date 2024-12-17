@@ -4,7 +4,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react"
- 
+import Image from 'next/image'
+
 const projects = [
   {
     title: 'E-Commerce Platform',
@@ -34,7 +35,7 @@ const projects = [
     title: 'Restaurant Management System',
     description: 'Full-stack application for restaurant management including order processing, inventory tracking, and analytics. Features real-time order updates and staff management.',
     tech: ['React', 'Express.js', 'PostgreSQL', 'Redis', 'Docker'],
-    image: '/restaurant-app.jpg',
+    image: '/resturant-app.jpg',
     github: 'https://github.com/Marco6792/restaurant-system',
     demo: 'https://restaurant-system-demo.vercel.app'
   },
@@ -75,7 +76,15 @@ export function Projects() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
-              <Card className="h-full flex flex-col">
+              <Card className="h-full flex flex-col overflow-hidden">
+                <div className="relative w-full h-48">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
