@@ -1,5 +1,5 @@
 "use client"
-
+"react/no-unescaped-entities"
 import { motion } from 'framer-motion'
 import { Code2, Briefcase, Star, Rocket, Zap, Users } from 'lucide-react'
 
@@ -14,7 +14,7 @@ const items = [
   },
   {
     title: "Experience",
-    description: "5+ years crafting digital solutions",
+    description: "4+ years crafting digital solutions",
     icon: <Briefcase className="w-5 h-5" />,
     delay: 0.3,
     className: "md:col-span-1 md:row-span-1",
@@ -22,7 +22,7 @@ const items = [
   },
   {
     title: "Projects",
-    description: "15+ successful projects delivered",
+    description: "2+ successful projects delivered",
     icon: <Star className="w-5 h-5" />,
     delay: 0.4,
     className: "md:col-span-1 md:row-span-1",

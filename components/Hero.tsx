@@ -1,5 +1,6 @@
 "use client"
 
+"react/no-unescaped-entities"
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
