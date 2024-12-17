@@ -11,8 +11,8 @@ const projects = [
     description: 'A full-stack MERN application with authentication, payment integration, and real-time inventory management.',
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],
     image: '/project1.jpg',
-    github: 'https://github.com/yourusername/project1',
-    demo: 'https://project1-demo.com'
+    github: 'https://github.com/Marco6792/ecommerce',
+    demo: 'https://demo.vercel.store'
   },
   {
     title: 'Mobile Fitness App',
