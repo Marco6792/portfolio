@@ -15,20 +15,36 @@ const projects = [
     demo: 'https://demo.vercel.store'
   },
   {
-    title: 'Mobile Fitness App',
-    description: 'Cross-platform mobile app built with React Native, featuring workout tracking and social features.',
-    tech: ['React Native', 'TypeScript', 'Redux'],
-    image: '/project2.jpg',
-    github: 'https://github.com/yourusername/project2',
-    demo: 'https://project2-demo.com'
+    title: 'AI-Powered Chat Application',
+    description: 'A real-time chat platform with AI-driven features including sentiment analysis, language translation, and smart responses. Built with modern web technologies and WebSocket for real-time communication.',
+    tech: ['Next.js', 'Socket.io', 'OpenAI API', 'MongoDB', 'TailwindCSS'],
+    image: '/chat-app.jpg',
+    github: 'https://github.com/Marco6792/chat-ai',
+    demo: 'https://chat-ai-demo.vercel.app'
   },
   {
-    title: 'AI Task Manager',
-    description: 'Modern web application using Next.js, featuring AI-powered task prioritization and scheduling.',
-    tech: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    image: '/project3.jpg',
-    github: 'https://github.com/yourusername/project3',
-    demo: 'https://project3-demo.com'
+    title: 'Smart Home Dashboard',
+    description: 'A comprehensive IoT dashboard for monitoring and controlling smart home devices. Features real-time data visualization, device management, and automated scheduling.',
+    tech: ['React', 'TypeScript', 'Node.js', 'MQTT', 'Chart.js'],
+    image: '/smart-home.jpg',
+    github: 'https://github.com/Marco6792/smart-home',
+    demo: 'https://smart-home-dashboard.vercel.app'
+  },
+  {
+    title: 'Restaurant Management System',
+    description: 'Full-stack application for restaurant management including order processing, inventory tracking, and analytics. Features real-time order updates and staff management.',
+    tech: ['React', 'Express.js', 'PostgreSQL', 'Redis', 'Docker'],
+    image: '/restaurant-app.jpg',
+    github: 'https://github.com/Marco6792/restaurant-system',
+    demo: 'https://restaurant-system-demo.vercel.app'
+  },
+  {
+    title: 'Financial Portfolio Tracker',
+    description: 'A sophisticated investment portfolio tracking application with real-time market data, portfolio analysis, and predictive analytics using machine learning.',
+    tech: ['Next.js', 'Python', 'FastAPI', 'TensorFlow', 'AWS'],
+    image: '/finance-portfolio.webp',
+    github: 'https://github.com/Marco6792/finance-tracker',
+    demo: 'https://finance-portfolio-demo.vercel.app'
   }
 ]
 
