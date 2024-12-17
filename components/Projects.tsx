@@ -43,11 +43,15 @@ const projects = [
     title: 'Financial Portfolio Tracker',
     description: 'A sophisticated investment portfolio tracking application with real-time market data, portfolio analysis, and predictive analytics using machine learning.',
     tech: ['Next.js', 'Python', 'FastAPI', 'TensorFlow', 'AWS'],
-    image: '/finance-portfolio.webp',
+    image: '/finance-app.jpg',
     github: 'https://github.com/Marco6792/finance-tracker',
     demo: 'https://finance-portfolio-demo.vercel.app'
   }
 ]
+
+
+
+
 
 export function Projects() {
   return (
@@ -60,7 +64,7 @@ export function Projects() {
           className="text-center mb-12 space-y-4"
         >
           <h2 className="text-3xl md:text-4xl font-bold">
-            Featured Projects
+            Featured Projects 
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and experience.
