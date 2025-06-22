@@ -1,45 +1,51 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { Moon, Sun, Menu, X } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
-import Image from 'next/image'
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' },
-]
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
+];
 
 export function Navbar() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
+    setMounted(true);
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   return (
     <nav className="fixed w-full top-0 z-50 flex justify-center px-4">
-      <div className={`relative max-w-2xl w-full rounded-full mt-4 transition-all duration-300 ${
-        scrolled ? 'py-3' : 'py-3'
-      }`}>
+      <div
+        className={`relative max-w-2xl w-full rounded-full mt-4 transition-all duration-300 ${
+          scrolled ? "py-3" : "py-3"
+        }`}
+      >
         {/* Backdrop */}
-        <div className={`absolute inset-0 rounded-full transition-colors border ${
-          scrolled ? 'bg-white/60 dark:bg-slate-950/60 backdrop-blur-2xl shadow-lg' : 'bg-white/40 dark:bg-slate-950/40 backdrop-blur-3xl'
-        }`} />
+        <div
+          className={`absolute inset-0 rounded-full transition-colors border ${
+            scrolled
+              ? "bg-white/60 dark:bg-slate-950/60 backdrop-blur-2xl shadow-lg"
+              : "bg-white/40 dark:bg-slate-950/40 backdrop-blur-3xl"
+          }`}
+        />
 
         {/* Content */}
         <div className="relative z-10 px-6">
@@ -48,14 +54,17 @@ export function Navbar() {
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full overflow-hidden">
                 <Image
-                  src="/profile.png"
+                  src="/Gemini_Generated_Image_uzdjshuzdjshuzdj.png"
                   alt="Profile"
                   width={32}
                   height={32}
                   className="object-cover"
                 />
               </div>
-              <a href="#" className="text-lg font-medium font-['Poppins'] bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+              <a
+                href="#"
+                className="text-lg font-medium font-['Poppins'] bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400"
+              >
                 Marco
               </a>
             </div>
@@ -76,10 +85,10 @@ export function Navbar() {
             {/* Mobile Theme Toggle and Menu Button */}
             <div className="md:hidden flex items-center gap-2">
               <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               >
-                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
               </button>
               <button
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -92,10 +101,10 @@ export function Navbar() {
             {/* Desktop Theme Toggle */}
             <div className="hidden md:block">
               <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               >
-                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
               </button>
             </div>
           </div>
@@ -127,5 +136,5 @@ export function Navbar() {
         )}
       </AnimatePresence>
     </nav>
-  )
+  );
 }
